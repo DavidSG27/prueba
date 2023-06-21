@@ -10,6 +10,7 @@ Comandos útiles Stage - Local:
 Comandos útiles Srv - Stage y otros:
 	- git push -> Sube los cambios del Storage a el servidor
 	- git pull -> Descarga la verión del servidor al Stage
+	- git fetch -> Recoge información sin hacer merge
 	- git blame -> Muestra el registro de los cambios realizados por los usuarios
 	- git logs -> Muestra un historico de todas las modificaciones realizadas
 	- git config user.name/mail "nombre/mail" -> Son dos comandos que sirven para identificarse
@@ -17,8 +18,11 @@ Comandos útiles Srv - Stage y otros:
 Comandos útiles Ramas:
 	- git checkout -b "nombre" -> Crea una rama de forma local
 	- git checkout -b "nombre" /carpetaSrv/nombre -> Crea una rama en el servidor
+	- git checkout -d "nombre" -> Borra una rama
 	- git branch -vv -> Muestra las rama existentes en el servidor y en local
 	- git checkout "nombre" -> Cambia a la rama "nombre" en local o en el srv
+	- git merge "rama" -> Fusiona los contenidos de la rama en uso y la nombrada
+	- git rebose "rama or" "rama sec" -> Reorganiza los ocntendiso de dos ramas para que estén en la misa "linea de sucesos"
 
 Otros:
 	Usar git meld para los conflictos en caso de que existan
