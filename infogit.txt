@@ -1,0 +1,32 @@
+Comandos útiles Stage - Local:
+	- git status -> Control de versiones Stage - Local
+	- git diff "archivo" -> Muestra las modificaciones de un Stage - Local
+	- git restore "archivo" -> Revierte los cambios en un archivo local con la información
+	  del mismo archivo en el Stage
+	- git add "archivo" -> Aplica las modificaciones de un archivo a el mismo en Stage
+	  o lo añade en caso de no existir.
+	- git commit -m "comentario" -> Actualiza el Storage con los cambios que se hayan realizado
+
+Comandos útiles Srv - Stage y otros:
+	- git push -> Sube los cambios del Storage a el servidor
+	- git pull -> Descarga la verión del servidor al Stage
+	- git blame -> Muestra el registro de los cambios realizados por los usuarios
+	- git logs -> Muestra un historico de todas las modificaciones realizadas
+	- git config user.name/mail "nombre/mail" -> Son dos comandos que sirven para identificarse
+
+Comandos útiles Ramas:
+	- git checkout -b "nombre" -> Crea una rama de forma local
+	- git checkout -b "nombre" /carpetaSrv/nombre -> Crea una rama en el servidor
+	- git branch -vv -> Muestra las rama existentes en el servidor y en local
+	- git checkout "nombre" -> Cambia a la rama "nombre" en local o en el srv
+
+Otros:
+	Usar git meld para los conflictos en caso de que existan
+	Siempre crear una rama para realizar funcionalidades o arreglar bugs, la rama Master
+	 y la rama Development siempre tienen que ser funcionales y pasar por un "control".
+	Al usar git con docker, crear nuestra propia imagen, con un Dockerfile usando una imagen
+	 base de S.O. en una versión en específico, pasandole las variables y los archivos
+	 de configuarción; además no subir contraseñas ni información a git NUNCA, ya que es
+	 casi imposible de borrar.
+
+Para más información: Manual: "GIT PRO" o usar google
