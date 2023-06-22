@@ -14,6 +14,7 @@ Comandos útiles Srv - Stage y otros:
 	- git blame -> Muestra el registro de los cambios realizados por los usuarios
 	- git logs -> Muestra un historico de todas las modificaciones realizadas
 	- git config user.name/mail "nombre/mail" -> Son dos comandos que sirven para identificarse
+	- git archive "rama" --prefix='project/' | gzip > `git describe master`.tar.gz -> Crea un archivo .tar.gz del git
 
 Comandos útiles Ramas:
 	- git checkout -b "nombre" -> Crea una rama de forma local
